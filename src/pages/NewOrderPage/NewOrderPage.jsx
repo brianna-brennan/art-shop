@@ -61,7 +61,7 @@ console.log(ListItem);
         <UserLogOut user={user} setUser={setUser} />
       </aside>
       <List
-        ListItem={ListItem.filter(item => item.category.name === activeCat)}
+        List={ListItem.filter(item => item.category.title === activeCat)}
         handleAddToOrder={handleAddToOrder}
       />
       <OrderDetail 
