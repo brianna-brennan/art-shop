@@ -6,6 +6,9 @@ import AuthPage from "../AuthPage/AuthPage";
 import OrderHistoryPage from "../OrderHistoryPage/OrderHistoryPage";
 import NavBar from "../../components/NavBar/NavBar";
 import List from '../../components/List/List';
+import NewOrderPage from '../NewOrderPage/NewOrderPage';
+import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage';
+
 
 function App() {
   const [user, setUser] = useState(getUser());
@@ -19,6 +22,9 @@ function App() {
         <List />
           <Routes>
             <Route path="/orders" element={<OrderHistoryPage />} />
+            <Route path="/*" element={<Navigate to="/orders/new" />} />
+            <Route path="/orders" element={<OrderHistoryPage user={user} setUser={setUser} />} />
+
           </Routes>
         </>
         :
