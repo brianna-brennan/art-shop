@@ -8,11 +8,11 @@ import OrderDetail from '../../components/OrderDetail/OrderDetail';
 import UserLogOut from '../../components/UserLogOut/UserLogOut';
 
 export default function NewOrderPage({ user, setUser }) {
-  const [ListItem, setListItem] = useState([]);
+  const [listItems, setListItem] = useState([]);
   const [activeCat, setActiveCat] = useState('');
   const [cart, setCart] = useState(null);
   const categoriesRef = useRef([]);
-console.log(ListItem);
+console.log(listItems);
   const navigate = useNavigate();
 
   async function handleAddToOrder(itemId) {
@@ -37,7 +37,7 @@ console.log(ListItem);
         const cat = item.category.name;
         return acc.includes(cat) ? acc : [...acc, cat]
       }, []);
-      setListItem(ListItem);
+      setListItem(items);
       setActiveCat(items[0].category.name);
     }
     getItems();
@@ -61,7 +61,8 @@ console.log(ListItem);
         <UserLogOut user={user} setUser={setUser} />
       </aside>
       <List
-        List={ListItem.filter(item => item.category.title === activeCat)}
+        listItems={listItems.filter(item => item.category.name === activeCat)}
+
         handleAddToOrder={handleAddToOrder}
       />
       <OrderDetail 

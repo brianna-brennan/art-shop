@@ -1,4 +1,5 @@
 const Schema = require('mongoose').Schema;
+require('./category');
 
 const itemSchema = new Schema(
 	{

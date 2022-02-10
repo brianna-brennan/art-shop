@@ -7,7 +7,7 @@ const Item = require('./models/item');
 (async function () {
 	await Category.deleteMany({});
 	const categories = await Category.create([
-		{ name: 'Canvas', sortOrder: 10 },
+		{ name: 'Canvas', sortOrder: 20 },
 		{ name: 'Prints', sortOrder: 20 },
 		{ name: 'Supplies', sortOrder: 30 },
 	]);
@@ -18,19 +18,19 @@ const Item = require('./models/item');
 			title: 'Sunshine Painting',
 			description: 'Acrylic painting on canvas.',
 			price: 52,
-			category: categories[1],
+			category: categories[0],
 		},
 		{
 			title: 'Flower Print',
 			description: '5x10 print on photo paper.',
 			price: 22,
-			category: categories[2],
+			category: categories[1],
 		},
 		{
 			title: 'Mermaid Painting',
 			description: '10x14 painting on canvas.',
 			price: 55,
-			category: categories[1],
+			category: categories[2],
 		},
 	]);
 
