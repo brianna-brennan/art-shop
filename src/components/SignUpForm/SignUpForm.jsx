@@ -11,7 +11,6 @@ class SignUpForm extends Component {
   }
 
   handleChange = (evt) => {
-    // The object passed to setState is merged with the current state object
     this.setState({
       [evt.target.name]: evt.target.value,
       error: ''
@@ -28,7 +27,6 @@ class SignUpForm extends Component {
       const user = await signUp(formData);
       this.props.setUser(user);
     } catch {
-      // An error occurred...
       this.setState({error: 'Sign Up Failed - Try Again'});
     }
   }
