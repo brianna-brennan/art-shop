@@ -14,7 +14,6 @@ const lineItemSchema = new Schema(
 );
 
 lineItemSchema.virtual('extPrice').get(function () {
-	// 'this' refers to the lineItem subdocument
 	return this.qty * this.item.price;
 });
 
@@ -31,7 +30,6 @@ const orderSchema = new Schema(
 );
 
 orderSchema.virtual('orderTotal').get(function () {
-	// 'this' refers to the order document
 	return this.lineItems.reduce((total, item) => total + item.extPrice, 0);
 });
 
@@ -44,30 +42,21 @@ orderSchema.virtual('orderId').get(function () {
 });
 
 orderSchema.statics.getCart = function (userId) {
-	// 'this' refers to the Order model
 	return this.findOneAndUpdate(
-		// query obj
 		{ user: userId, isPaid: false },
-		// update obj
 		{ user: userId },
-		// options obj
-		// upsert option creates the doc if it doesn't exist!
-		// new option will make sure the updated doc is returned
 		{ upsert: true, new: true }
 	);
 };
 
 orderSchema.methods.addItemToCart = async function (itemId) {
-	// 'this' refers to the 'cart' (unpaid order)
 	const cart = this;
 	const lineItem = cart.lineItems.find((lineItem) =>
 		lineItem.item._id.equals(itemId)
 	);
 	if (lineItem) {
-		// The item is already in the cart, increase the qty!
 		lineItem.qty += 1;
 	} else {
-		// Not in cart, lets add the item!
 		const item = await mongoose.model('Item').findById(itemId);
 		cart.lineItems.push({ item });
 	}
