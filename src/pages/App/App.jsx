@@ -3,7 +3,6 @@ import { useState } from "react";
 import { getUser } from "../../utilities/users-service";
 import { Routes, Route } from "react-router-dom";
 import AuthPage from "../AuthPage/AuthPage";
-import OrderHistoryPage from "../OrderHistoryPage/OrderHistoryPage";
 import NavBar from "../../components/NavBar/NavBar";
 import List from '../../components/List/List';
 import NewOrderPage from '../NewOrderPage/NewOrderPage';
@@ -21,7 +20,7 @@ function App() {
         <NavBar setUser={setUser} user={user}/>
         <List />
           <Routes>
-            <Route path="/orders" element={<OrderHistoryPage />} />
+          <Route path="/orders/new" element={<NewOrderPage user={user} setUser={setUser} />} />
             <Route path="/*" element={<Navigate to="/orders/new" />} />
             <Route path="/orders" element={<OrderHistoryPage user={user} setUser={setUser} />} />
 

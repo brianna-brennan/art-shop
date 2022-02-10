@@ -1,4 +1,3 @@
-import './OrderListItem.css';
 
 export default function OrderListItem({ order, isSelected, handleSelectOrder }) {
   return (
