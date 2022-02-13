@@ -6,6 +6,8 @@ import List from '../../components/List/List';
 import CategoryList from '../../components/CategoryList/CategoryList';
 import OrderDetail from '../../components/OrderDetail/OrderDetail';
 import UserLogOut from '../../components/UserLogOut/UserLogOut';
+import './NewOrderPage.css';
+
 
 export default function NewOrderPage({ user, setUser }) {
   const [listItems, setListItem] = useState([]);

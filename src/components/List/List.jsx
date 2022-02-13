@@ -12,7 +12,6 @@ export default function List({ listItems, handleAddToOrder }) {
   return (
     <main className="List">
       {items}
-      <p>welp</p>
     </main>
   );
 }
