@@ -23,6 +23,7 @@ I used Whimsical, Lucid Chart and Trello to plan out the features and UI before 
 - JSX
 - CSS3
 - Bootstrap
+- Flickr for Images
 
 ### Back-End
 
