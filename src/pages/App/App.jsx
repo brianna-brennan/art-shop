@@ -1,7 +1,7 @@
 import './App.css';
 import { useState } from "react";
 import { getUser } from "../../utilities/users-service";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import AuthPage from "../AuthPage/AuthPage";
 import NavBar from "../../components/NavBar/NavBar";
 import List from '../../components/List/List';
@@ -22,6 +22,8 @@ function App() {
           <Routes>
           <Route path="/orders/new" element={<NewOrderPage user={user} setUser={setUser} />} />
           <Route path="/orders" element={<OrderHistoryPage user={user} setUser={setUser} />} />
+          <Route path="/*" element={<Navigate to="/orders/new" />} />
+
           </Routes>
         </>
         :
