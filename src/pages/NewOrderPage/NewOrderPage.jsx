@@ -59,7 +59,7 @@ console.log(listItems);
           activeCat={activeCat}
           setActiveCat={setActiveCat}
         />
-        <Link to="/orders" className="button btn-sm">PREVIOUS ORDERS</Link>
+        <button to="/orders" className="button btn-sm">PREVIOUS ORDERS</button>
         <UserLogOut user={user} setUser={setUser} />
       </aside>
       <List

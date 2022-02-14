@@ -5,6 +5,8 @@
 	align-items: center;
 	background-color: #f9e79f;
 	border-radius: 2vmin;
+	margin: 2rem;
+	padding: 5rem;
 }
 
 .AuthPage h3 {

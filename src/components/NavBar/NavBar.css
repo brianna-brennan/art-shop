@@ -1,5 +1,57 @@
 nav {
-	background-color: #f9e79f;
-	padding-bottom: 2rem;
-	padding-top: 1rem;
+	background-color: white;
+	padding-bottom: 0.5rem;
+	padding-top: 0.5rem;
+	margin: 0.5rem;
+}
+
+.nav-neworder {
+	font-size: 1.2vw;
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+	margin-right: 3.5vw;
+	margin-left: 3.5vw;
+}
+
+.nav-orderhistory {
+	font-size: 1.2vw;
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+	margin-right: 3.5vw;
+	margin-left: 3.5vw;
+}
+.nav-neworder:hover {
+	font-weight: 700;
+}
+
+.nav-orderhistory:hover {
+	font-weight: 700;
+}
+
+.navlink-container {
+	display: flex;
+	margin-bottom: 0;
+}
+
+.logout {
+	font-size: 1.2vw;
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+	margin-right: 3.5vw;
+	margin-left: 3.5vw;
+}
+
+.logout:hover {
+	font-weight: 700;
+}
+
+.grow {
+	transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+	transform: scale(1.1);
 }

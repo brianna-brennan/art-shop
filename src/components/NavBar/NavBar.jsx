@@ -10,13 +10,14 @@ function NavBar({ user, setUser }) {
 
   return (
     <nav>
-      <Link to="/orders/new" >New Order</Link>
+       <span>Welcome, {user.name}!</span>
       &nbsp; | &nbsp;
-      <Link to="/orders">Order History</Link>
+      <Link className="nav-neworder" to="/orders/new" >New Order</Link>
       &nbsp; | &nbsp;
-      <span>Welcome, {user.name}!</span>
+      <Link className="nav-orderhistory" to="/orders">Order History</Link>
       &nbsp; | &nbsp;
-      <Link onClick={handleLogOut} to="">Log Out</Link>
+    
+      <Link className="logout" onClick={handleLogOut} to="">Log Out</Link>
     </nav>
   )
 }

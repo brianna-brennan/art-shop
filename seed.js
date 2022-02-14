@@ -35,6 +35,30 @@ const Item = require('./models/item');
 			price: 55,
 			category: categories[0],
 		},
+		{
+			title: 'Mid Century',
+			image:
+				'https://res.cloudinary.com/mixtiles-art/image/private/f_auto,t_front_portrait_black/artists/Nouveau%20Prints/Abstract%20N%201%20%5Btop10%5D',
+			description: '10x14 painting on canvas.',
+			price: 55,
+			category: categories[0],
+		},
+		{
+			title: 'Pink Abstract ',
+			image:
+				'https://static.greatbigcanvas.com/images/singlecanvas_thick_none/jewel-branding/african-abstract,2627561.jpg',
+			description: '10x14 painting on canvas.',
+			price: 55,
+			category: categories[1],
+		},
+		{
+			title: 'Self Portrait',
+			image:
+				'https://fydn.imgix.net/m%2Fgen%2Fart-print-std-portrait-p1%2Fe5b541a8-8d45-4bf4-8e29-919d879f0bb3.jpg?ar=1%3A1&auto=format%2Ccompress&crop=top&fit=crop&q=75&w=1280',
+			description: '10x14 painting on canvas.',
+			price: 55,
+			category: categories[0],
+		},
 	]);
 
 	console.log(items);
