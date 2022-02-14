@@ -3,8 +3,13 @@
 	display: grid;
 	grid-template-columns: 1.6fr 3.5fr 3fr;
 	grid-template-rows: 1fr;
-	background-color: #f9e79f;
 	border-radius: 2vmin;
+	margin: 3vmin 0;
+	padding: 3vmin;
+	overflow-y: scroll;
+	padding: 100px 60px;
+	background-color: #9eaec6;
+	border-radius: 8px;
 }
 
 .OrderHistoryPage aside {

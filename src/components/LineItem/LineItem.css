@@ -2,11 +2,15 @@
 	width: 100%;
 	display: grid;
 	grid-template-columns: 3vw 15.35vw 5.75vw 5.25vw;
-	padding: 1vmin 0;
 	color: var(--text-light);
 	background-color: #f9e79f;
 	border-top: 0.1vmin solid var(--tan-3);
 	font-size: 1.5vw;
+	border-radius: 2vmin;
+	margin: 3vmin 0;
+	border-radius: 8px;
+	padding: 2rem;
+	box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 .LineItem:last-child {

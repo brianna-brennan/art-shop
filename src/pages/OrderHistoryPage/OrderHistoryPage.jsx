@@ -25,6 +25,7 @@ export default function OrderHistoryPage({ user, setUser }) {
   }
 
   return (
+    
     <main className="OrderHistoryPage">
       <aside>
         
@@ -39,5 +40,6 @@ export default function OrderHistoryPage({ user, setUser }) {
         order={activeOrder}
       />
     </main>
+    
   );
 }
