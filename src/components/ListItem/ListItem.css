@@ -26,8 +26,14 @@
 	font-size: 2vw;
 	text-align: center;
 	color: var(--text-light);
+	padding: 0.5rem;
 }
 
 .ListItem button {
-	background-color: #f1c40f;
+	background-color: #dbcee5;
+}
+
+img {
+	width: 10rem;
+	height: 10rem;
 }

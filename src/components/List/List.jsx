@@ -10,8 +10,11 @@ export default function List({ listItems, handleAddToOrder }) {
     />
   );
   return (
+    
+    <div>
     <main className="List">
       {items}
     </main>
+    </div>
   );
 }
