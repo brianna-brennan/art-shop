@@ -1,0 +1,30 @@
+.ListItem {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 3vmin;
+	padding: 2vmin;
+	color: var(--text-light);
+	background-color: var(--white);
+	border: 0.1vmin solid var(--tan-3);
+	border-radius: 1vmin;
+	font-size: 4vmin;
+}
+
+.ListItem .buy {
+	display: flex;
+	flex-direction: column;
+}
+
+.ListItem .buy span {
+	font-size: 1.7vw;
+	text-align: center;
+	color: var(--text-light);
+}
+
+.ListItem .title {
+	font-size: 2vw;
+	text-align: center;
+	color: var(--text-light);
+}
