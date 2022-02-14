@@ -6,8 +6,7 @@
 	margin-bottom: 3vmin;
 	padding: 2vmin;
 	color: var(--text-light);
-	background-color: var(--white);
-	border: 0.1vmin solid var(--tan-3);
+	background-color: #f9e79f;
 	border-radius: 1vmin;
 	font-size: 4vmin;
 }
@@ -27,4 +26,8 @@
 	font-size: 2vw;
 	text-align: center;
 	color: var(--text-light);
+}
+
+.ListItem button {
+	background-color: #f1c40f;
 }

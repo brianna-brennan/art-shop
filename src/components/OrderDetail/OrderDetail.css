@@ -9,6 +9,7 @@
 
 .OrderDetail .section-heading {
 	width: 100%;
+	font-size: 4vmin;
 }
 
 .OrderDetail .line-item-container {
@@ -38,10 +39,4 @@
 .OrderDetail .total span.right {
 	display: flex;
 	justify-content: flex-end;
-}
-
-.OrderDetail .hungry {
-	position: absolute;
-	top: 50vh;
-	font-size: 2vmin;
 }

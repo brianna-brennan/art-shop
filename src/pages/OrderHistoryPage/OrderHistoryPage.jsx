@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import './OrderHistoryPage.css';
+
 import { Link } from 'react-router-dom';
 import * as ordersAPI from '../../utilities/orders-api';
 import UserLogOut from '../../components/UserLogOut/UserLogOut';
