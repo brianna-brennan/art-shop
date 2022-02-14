@@ -23,17 +23,17 @@ const Item = require('./models/item');
 		},
 		{
 			title: 'Flower Print',
-			image: '',
+			image: 'https://live.staticflickr.com/65535/51881231554_d70431e2b6_z.jpg',
 			description: '5x10 print on photo paper.',
 			price: 22,
 			category: categories[1],
 		},
 		{
-			title: 'Mermaid Painting',
-			image: '',
+			title: 'Blue Abstract',
+			image: 'https://live.staticflickr.com/65535/51880892041_973047360a_z.jpg',
 			description: '10x14 painting on canvas.',
 			price: 55,
-			category: categories[2],
+			category: categories[0],
 		},
 	]);
 
