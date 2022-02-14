@@ -4,8 +4,7 @@
 
 ## Screenshots 📸
 
-<img src='public/Screen Shot 2022-02-14 at 2.39.03 AM.png' width="350"> | <img src='public/Screen Shot 2022-02-14 at 2.40.28 AM.png' width="350"> | <img src='public/Screen Shot 2022-02-14 at 2.40.41 AM.png' width="350"> |
-| <img src='public/Screen Shot 2022-02-14 at 2.41.03 AM.png' width="350">
+<img src='public/Screen Shot 2022-02-14 at 2.39.03 AM.png' width="350"> <img src='public/Screen Shot 2022-02-14 at 2.40.28 AM.png' width="350"> <img src='public/Screen Shot 2022-02-14 at 2.40.41 AM.png' width="350"> <img src='public/Screen Shot 2022-02-14 at 2.41.03 AM.png' width="350">
 
 ## Design Process 📐
 
